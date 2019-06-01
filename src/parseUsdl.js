@@ -9,9 +9,10 @@ exports.parse = function parseCode128(str, options = defaultOptions) {
   const rawLines = str.trim().split(lineSeparator);
   const lines = rawLines.map(rawLine => sanitizeData(rawLine));
   let started;
-  lines.slice(0, -1).forEach(line => {
+  lines.slice(1, -1).forEach(line => {
     if (!started) {
       props['firstLine'] = line;
+      started = true;
     }
 
     let code = getCode(line);
