@@ -8,11 +8,12 @@ exports.parse = function parseCode128(str, options = defaultOptions) {
   const props = {};
   const rawLines = str.trim().split(lineSeparator);
   const lines = rawLines.map(rawLine => sanitizeData(rawLine));
-  let started;
+  let started = false;
   lines.slice(1, -1).forEach(line => {
     if (!started) {
       props['firstLine'] = line;
       started = true;
+      return;
     }
 
     let code = getCode(line);
