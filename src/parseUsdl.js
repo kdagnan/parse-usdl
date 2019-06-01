@@ -21,6 +21,7 @@ exports.parse = function parseCode128(str, options = defaultOptions) {
     let key = getKey(code);
     if (!key) {
       if (options.suppressErrors) {
+      	console.log("Unknown code: " + code);
         return;
       } else {
         throw new Error("unknown code: " + code);
