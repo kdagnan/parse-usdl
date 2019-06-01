@@ -50,5 +50,13 @@ exports.CodeToKey = {
   DDI: 'dateAge19',
   DDJ: 'dateAge21',
   DDK: 'organDonor',
-  DDL: 'veteran'
+  DDL: 'veteran',
+  //UNKNOWN CURRENTLY
+  DAR: 'unknownDAR',
+  DAS: 'unknownDAS',
+  DAT: 'unknownDAT',
+  DBH: 'unknownDBH',
+  ZFB: 'unknownZFB',
+  ZFD: 'unknownZFD',
+  ZFF: 'unknownZFF'
 }
