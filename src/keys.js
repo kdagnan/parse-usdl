@@ -58,5 +58,7 @@ exports.CodeToKey = {
   DBH: 'unknownDBH',
   ZFB: 'unknownZFB',
   ZFD: 'unknownZFD',
-  ZFF: 'unknownZFF'
+  ZFF: 'unknownZFF',
+  ZFC: 'unknownZFC',
+  ZFE: 'unknownZFE'
 }
