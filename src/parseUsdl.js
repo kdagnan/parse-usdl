@@ -11,10 +11,7 @@ exports.parse = function parseCode128(str, options = defaultOptions) {
   let started;
   lines.slice(0, -1).forEach(line => {
     if (!started) {
-      if (line.indexOf("ANSI ") === 0) {
-        started = true;
-      }
-      return;
+      props['firstLine'] = line;
     }
 
     let code = getCode(line);
@@ -49,6 +46,6 @@ const getSex = (code, value) => (value === "1" ? "M" : "F");
 const isDateField = key => key.indexOf("date") === 0;
 
 const getDateFormat = value => {
-  const parts = [value.slice(0, 2), value.slice(2, 4), value.slice(4)];
+  const parts = [value.slice(4, 6), value.slice(6, 8), value.slice(0, 4)];
   return parts.join("/");
 };

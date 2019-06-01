@@ -28,6 +28,7 @@ exports.CodeToKey = {
   DCI: 'placeOfBirth',
   DCJ: 'auditInformation',
   DCK: 'inventoryControlNumber',
+  DAA: 'fullName',
   DBN: 'otherLastName',
   DBG: 'otherFirstName',
   DBS: 'otherSuffixName',
