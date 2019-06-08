@@ -31,6 +31,7 @@ exports.CodeToKey = {
   DAA: 'fullName',
   DBN: 'otherLastName',
   DBG: 'otherFirstName',
+  DCT: 'firstMiddle',
   DBS: 'otherSuffixName',
   DCU: 'nameSuffix', // e.g. jr, sr
   DCE: 'weightRange',
@@ -55,12 +56,14 @@ exports.CodeToKey = {
   //UNKNOWN CURRENTLY
   DAR: 'unknownDAR',
   DAS: 'unknownDAS',
-  DCT: 'unknownDCT',
+  DCH: 'unknownDCH',
   DAT: 'unknownDAT',
   DBH: 'unknownDBH',
   ZFB: 'unknownZFB',
   ZFD: 'unknownZFD',
   ZFF: 'unknownZFF',
   ZFC: 'unknownZFC',
-  ZFE: 'unknownZFE'
+  ZFE: 'unknownZFE',
+  ZTZ: 'unknownZTZ',
+  ZTB: 'unknownZTB'
 }
